@@ -2,6 +2,7 @@ import React from 'react'
 import "../styles/Register.scss";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"
+import { Link } from 'react-router-dom';
 
     
 
@@ -126,7 +127,7 @@ const RegisterPage = () => {
           )}
           <button type="submit" disabled={!passwordMatch}>REGISTER</button>
     </form>
-        <a href='/login'>Already have an account? Login.</a>
+        <Link to='/login'>Already have an account? Login.</Link>
 
     </div>
 
